@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // gsap.set(".hero-image", { rotation: 90 });
     gsap.set(".hero-section", { yPercent: 10 });
-    
+
 
     gsap.to(".hero-image", {
         ease: "none",
