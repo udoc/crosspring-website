@@ -288,7 +288,7 @@ h1 {
 }
 
 .hero-sub-text {
-  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 700;
   color: rgb(238, 238, 238);
   letter-spacing: 2px;
@@ -432,7 +432,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 790px) {
     .direct-section {
       flex-direction: row;
     }
@@ -527,6 +527,7 @@ a.link:is(:hover, :focus, :focus-visible) {
     .hero-section {
         grid-template-columns: 1fr;
         padding: 2em 0;
+        height: 66vh
     }
     
     .hero-title {
