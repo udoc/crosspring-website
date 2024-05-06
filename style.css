@@ -404,7 +404,7 @@ h1 {
   text-align: center;
   background: var(--card-gradient);
   border: 2px double transparent;
-  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-image: var(--background-image);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -502,14 +502,14 @@ h1 {
     color: #ebebeb;
   }
 
-  .logo-s {
-    width: 100%;
-    max-width: 145px;
-    margin: 0 auto;
-    position: relative;
-    right: 480px;
-    top: -178px;
-  }
+.logo-s {
+  width: 100%;
+  max-width: 145px;
+  margin: 0 auto;
+  position: relative;
+  right: 480px;
+  top: -178px;
+}
 
 @media screen and (max-width: 1025px) {
     .cluster {
