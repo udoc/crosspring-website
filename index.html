@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Crosspring</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="img/Crosspring-white.svg" alt="letter s logo" />
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#about">crosspring</a></li>
+      <li><a href="#direct-investments">investments</a></li>
+      <li><a href="#projects">projects</a></li>
+    </ul>
+  </header>
+
+  <!-- animation scroll that does not work, try to fix later if time left -->
+  <!-- <section class="cluster">
+    <div class="clusterPieces middel-image"><img src="img/logo-small-letter-s.svg" alt="logo of the letter s">
+    </div>
+  </section> -->
+
+  <section class="hero-section">
+    <div class="title-section hero-wrapper">
+      <div class="hero-image-div">
+        <img class="hero-image" src="img/Crosspring-white.svg" />
+        <h3 class="hero-sub-text">For over <span>20 years</span> we have been empowering people to execute on their
+          dreams and ambitions. We do this by investing directly in companies or in VC and PE funds. Next to this we
+          support initiatives with similar goals and values as ours.</h3>
+      </div>
+      <img class="spring-letter" src="img/logo-small-letter-s.svg" alt="logo of the letter s">
+    </div>
+  </section>
+
+  <section id="direct-investments" class="direct-section">
+    <div class="investments">
+      <h2 class="direct-header card-layout-header">Investments</h2>
+      <div class="investment-wrapper">
+        <div>
+          <h2>Direct investments</h2>
+          <div class="gallery">
+            <div class="item">Geo - (Eastern) Europe</div>
+            <div class="item">Industries - Fintech</div>
+            <div class="item">Security</div>
+            <div class="item">Agri-Tech</div>
+            <div class="item">Logistics</div>
+            <div class="item">Legal</div>
+            <div class="item">E-Commerce</div>
+            <div class="item">Leisure Stage (Pre-)Seed</div>
+            <div class="item">First Revenue Booked</div>
+          </div>
+        </div>
+
+        <div class="fund-text">
+          <h2>Fund investments</h2>
+          <p>We focus on a mix between early stage funds and a few later stage funds. First time fund managers.</p>
+        </div>
+      </div>
+  </section>
+
+  <section id="projects" class="section-vh">
+    <div class="title-section card-layout">
+      <h2 class="card-layout-header">Projects</h2>
+      <p>Next to our investment strategy we are also involved in several global and regional projects which are aimed at
+        stimulating entrepreneurship and early stage investments. We usually partner with (local) companies,
+        governments, universities and institutes like EU, US aid and many others.
+
+      <article>
+        <h2>Start-up Visa</h2>
+        <p>Would you like to start your business in the Netherlands and make use of a Startup Visa?<br />
+
+          Crosspring is an official facilitator of Start-up Visa and can support you to come to the Netherlands to build
+          your startup from here. Your future career in the Netherlands starts here. Visit Welcome to NL to learn about
+          making the move to one of Europe’s liveliest business locations. Find out why talented professionals from all
+          over the world choose to advance their careers here.
+
+          Contact us for the possibilities.
+
+      </article>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="graph-img"></div>
+    <div class="col footer-title">
+      <h3>Crosspring</h3>
+      <p>We help tech-startups scale up!</p>
+      <div class="social">
+        <a href="mailto:info@crosspring.nl" target="_blank" class="link"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20 4C21.6569 4 23 5.34315 23 7V17C23 18.6569 21.6569 20 20 20H4C2.34315 20 1 18.6569 1 17V7C1 5.34315 2.34315 4 4 4H20ZM19.2529 6H4.74718L11.3804 11.2367C11.7437 11.5236 12.2563 11.5236 12.6197 11.2367L19.2529 6ZM3 7.1688V17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V7.16882L13.8589 12.8065C12.769 13.667 11.231 13.667 10.1411 12.8065L3 7.1688Z"
+                fill="#f0f0f0"></path>
+            </g>
+          </svg></a>
+      </div>
+      <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+    </div>
+    <div class="col">
+      <address>
+        <p>Crosspring BV</p>
+        <p>Vlamingstraat 4</p>
+        <p>2712 GZ, Zoetermeer</p>
+        <p>Netherlands</p>
+      </address>
+    </div>
+    <div class="backdrop"></div>
+  </footer>
+
+</body>
+
+</html>
