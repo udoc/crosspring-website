@@ -513,7 +513,6 @@ a.link:is(:hover, :focus, :focus-visible) {
 }
 
 @media screen and (max-width: 640px) {
-
     .hero-section {
         grid-template-columns: 1fr;
         padding: 2em 0;
@@ -536,7 +535,6 @@ a.link:is(:hover, :focus, :focus-visible) {
     .logo-s {
        display: none;
     }
-
 }
 
 @media screen and (max-width: 540px) {
@@ -586,7 +584,6 @@ footer {
     justify-content: space-evenly;
   }
   
-  
   .social {
     color: #BC78EC;
     font-weight: 700;
@@ -632,5 +629,4 @@ footer {
       flex-direction: column;
       gap: 2em;
     }
-
   }

@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         yPercent: -5,
         scrollTrigger: {
             trigger: ".projects",
-            duration: 3.5,
+            duration: 2,
             start: "top",
             end: "+=150",
             // markers: true,
-            scrub: 2
+            scrub: 1
         },
     });
 
