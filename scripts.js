@@ -29,63 +29,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
     });
 
-
-
-    gsap.set(".triangle", { yPercent: 25, rotation: -90 });
-    gsap.set(".dotsWhite", { yPercent: 10 });
-    gsap.set(".middel-image", { yPercent: -20 });
-    gsap.set(".bottom-section", { yPercent: 5 });
-
-    gsap.to(".triangle", {
+    gsap.to(".fund-text", {
+        ease: "none",
+        // duration: 2,
         yPercent: -5,
-        rotation: 40,
-        ease: "none",
         scrollTrigger: {
-            trigger: ".bottom-section",
+            trigger: ".investments",
+            duration: 2,
+            start: "top",
+            end: "+=150",
+            // markers: true,
             scrub: 1
         },
     });
 
-    gsap.to(".dotsWhite", {
-        yPercent: -10,
+    gsap.to(".logo-s", {
         ease: "none",
-        scrollTrigger: {
-            trigger: ".bottom-section",
-            scrub: 1
-        },
-    });
-
-
-    gsap.to(".middel-image", {
-        yPercent: 20,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".bottom-section",
-            scrub: 1
-        },
-    });
-
-    gsap.to(".mid-img-caption", {
-        yPercent: 200,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".bottom-section",
-            // markers:true,
-            end: "bottom center",
-            scrub: 1
-        },
-    });
-
-    gsap.to(".bottom-section", {
+        // duration: 2,
         yPercent: -5,
-        ease: "none",
         scrollTrigger: {
-            trigger: ".bottom-section",
-            // markers:true,
-            end: "bottom center",
-            scrub: 1
+            trigger: ".projects",
+            duration: 3.5,
+            start: "top",
+            end: "+=150",
+            // markers: true,
+            scrub: 2
         },
     });
+
 });
 
 
