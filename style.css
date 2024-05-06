@@ -470,37 +470,37 @@ h1 {
   margin-block-end: 2em;
 }
 
-  article {
-    place-self: end;
-    padding: 2.25em;
-    max-width: 550px;
-    max-height: 480px;
-    background: var(--card-gradient);
-    border: 2px double transparent;
-    border-radius: 1em;
-    background-image: var(--background-image);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-  }
+article {
+  place-self: end;
+  padding: 2.25em;
+  max-width: 550px;
+  max-height: 480px;
+  background: var(--card-gradient);
+  border: 2px double transparent;
+  border-radius: 1em;
+  background-image: var(--background-image);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
 
-  .project-p {
-    max-width: 40ch;
-    margin-bottom: 1.225em;
-  }
+.project-p {
+  max-width: 40ch;
+  margin-bottom: 1.225em;
+}
 
-  .bold-text {
-    font-weight: bold;
-  }
-  
-  a.link {
-    display: inline;
-    color: #BC78EC; 
-    font-weight: bold;
-  }
+.bold-text {
+  font-weight: bold;
+}
 
-  a.link:is(:hover, :focus, :focus-visible) {
-    color: #ebebeb;
-  }
+a.link {
+  display: inline;
+  color: #BC78EC; 
+  font-weight: bold;
+}
+
+a.link:is(:hover, :focus, :focus-visible) {
+  color: #ebebeb;
+}
 
 .logo-s {
   width: 100%;
