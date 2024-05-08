@@ -1,0 +1,24 @@
+{
+  "name": "crosspring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udoc/crosspring-website.git"
+  },
+  "start": "node server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udoc/crosspring-website/issues"
+  },
+  "homepage": "https://github.com/udoc/crosspring-website#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
