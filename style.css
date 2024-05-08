@@ -398,10 +398,6 @@ span {
       top: 3rem;
       margin: 0 auto;
     }
-
-    .logo-s {
-      right: -30px;
-    }
   }  
 
 /* PROJECTS */
@@ -463,6 +459,19 @@ a.link:is(:hover, :focus, :focus-visible) {
   top: -178px;
 }
 
+@media screen and (max-width: 800px) {
+  .logo-s {
+     right: 370px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .logo-s {
+     display: none;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
     article {
       max-height: fit-content;
@@ -473,6 +482,8 @@ a.link:is(:hover, :focus, :focus-visible) {
        display: none;
     }
 }
+
+
 
 /* FOOTER */
 footer {
