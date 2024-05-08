@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.to(".logo-s", {
         ease: "none",
         // duration: 2,
-        yPercent: -10,
+        yPercent: -15,
         scrollTrigger: {
             trigger: ".footer",
             duration: 2,
