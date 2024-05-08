@@ -1,7 +1,6 @@
 /* BEGIN RESET */
 :root {
 	--max-page-width: 1025px;
-
   /* choose color gradient here */
   --card-gradient: linear-gradient(135deg, #3B2667, #BC78EC);
   /* --card-gradient: linear-gradient(135deg, #B1EA4D, #459522); */
@@ -15,44 +14,42 @@
     scroll-behavior: smooth;
   }
   
-  * {
-    margin: 0;
-  }
-  
-  body {
-    max-width: 100vw;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #f4f4f4;
-    background-color: #1d1d1d;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(16, 16, 16) 97%);
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+}
 
-  }
+body {
+  max-width: 100vw;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #f4f4f4;
+  background-color: #1d1d1d;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(16, 16, 16) 97%);
+  scroll-behavior: smooth;
+}
   
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-    
-  }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
-  #root, #__next {
-    isolation: isolate;
-  }
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
   
 /* END RESET */
 
@@ -185,7 +182,7 @@
 /* ENG NAVIGATION */
 
 .hero-section {
-  height: 55vh;
+  height: 70vh;
   display:grid;
   place-content: center;
 }
@@ -267,22 +264,22 @@
 }
 
 .title {
-    color: #81d0b0;
-    width: 90%;
-    background-color: transparent;
-    overflow: hidden;
-    font-kerning: none;
+  color: #81d0b0;
+  width: 90%;
+  background-color: transparent;
+  overflow: hidden;
+  font-kerning: none;
 }
 
 h1 {
-    font-size: clamp(2rem, 6vw, 5rem);
-    line-height: 1.2;
-    font-weight: 700;
-    color: floralwhite;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-    font-kerning: none;
+  font-size: clamp(2rem, 6vw, 5rem);
+  line-height: 1.2;
+  font-weight: 700;
+  color: floralwhite;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-kerning: none;
 }
 
 .hero-sub-text {
@@ -304,16 +301,15 @@ h1 {
   box-shadow: 0px 10px 28px -1px rgba(16, 1, 33, 0.4);
 }
 
-  span {
-    font-weight: 800;
-  }
+span {
+  font-weight: 800;
+}
 
 .card-layout-header {
     color: #f7f7f7;
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 700;
     margin: 0;
-    padding: 1em;
 }
 
 #investments {
@@ -566,7 +562,7 @@ footer {
     justify-content: space-evenly;
     align-items: end;
     inset: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.229), rgb(0, 0, 0));
     background: linear-gradient(
       to bottom,
     rgba(0,0,0, 0),
@@ -600,15 +596,25 @@ footer {
     color: #f8eeff;
     font-weight: 700;
     transform: scale(1.05);
-  }
+  }  
   
   .link {
-    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
+  address {
+    text-align: center;
+    color: #cbcbcb;
+    font-size: 0.9rem;
+    font-style: normal;
+  }
+
+  address :first-child {
+    font-weight: bold;
+ }
+
   small {
     font-size: 0.8rem;
     text-align: center;
@@ -618,14 +624,12 @@ footer {
 
   @media screen and (max-width: 700px) {
     footer {
-      margin-block-start: 0;
-      height: 40vh;
       justify-items: center;
       background-size: cover;
     }
 
     .footer-wrapper {
-      padding-block-start: 1em;
+      padding-block-start: 3em;
       flex-direction: column;
       gap: 2em;
     }
