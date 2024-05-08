@@ -4,7 +4,6 @@
   /* choose color gradient here */
   --card-gradient: linear-gradient(135deg, #3B2667, #BC78EC);
   /* --card-gradient: linear-gradient(135deg, #B1EA4D, #459522); */
-
   --background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192)); 
   /* --background-image: linear-gradient(rgb(13, 33, 20), rgb(13, 33, 25)), radial-gradient(circle at left top, rgb(1, 218, 37), rgb(40, 217, 0));  */
 }
@@ -49,8 +48,7 @@ a {
 
 #root, #__next {
   isolation: isolate;
-}
-  
+} 
 /* END RESET */
 
 /* NAVIGATION */
@@ -178,10 +176,11 @@ a {
       display: none;
     }
   }
-
 /* ENG NAVIGATION */
 
 .hero-section {
+  padding-block-start: 60px;
+  /* margin-block-end: 60px; */
   height: 70vh;
   display:grid;
   place-content: center;
@@ -212,12 +211,33 @@ a {
   padding-inline: 2em;
 }
 
+.hero-sub-text {
+  font-size: clamp(.8rem, 2vw, 1rem);
+  font-weight: 700;
+  color: rgb(238, 238, 238);
+  letter-spacing: 2px;
+  font-kerning: none;
+  padding-top: 1rem;
+}
+
 .spring-letter {
   position: relative;
   z-index: -4;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 650px) {
+  .hero-section {
+    padding-block-start: 60px;
+    height: 80vh;
+  }
+
+  .hero-image-div {
+    place-content: center;
+    line-height: 1.6;
+    padding-block: 5em 3em;
+    padding-inline: 1em;
+   }
+
   .hero-wrapper{
     grid-template-columns: 1fr;
   }
@@ -228,7 +248,7 @@ a {
   }
   
   .hero-sub-text {
-    text-align: center;
+    text-align: left;
     padding-block-start: 2em;
   }
 
@@ -238,57 +258,12 @@ a {
 
 }
 
-.bw-img {
-  position: relative;
-  width: 100vw;
-  height: 400px;
-  background-image: url("img/pres-1.webp");
-  filter: grayscale(100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
-.cluster {
-    position: relative;
-    width: 100%;
-    max-width: 875px;
-    margin: 0 auto;
-    background-color: transparent;
-    padding-bottom: 2em;
-}
-
-.clusterPieces {
-    position: absolute;
-}
-
 .title {
   color: #81d0b0;
   width: 90%;
   background-color: transparent;
   overflow: hidden;
   font-kerning: none;
-}
-
-h1 {
-  font-size: clamp(2rem, 6vw, 5rem);
-  line-height: 1.2;
-  font-weight: 700;
-  color: floralwhite;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1px;
-  font-kerning: none;
-}
-
-.hero-sub-text {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  font-weight: 700;
-  color: rgb(238, 238, 238);
-  letter-spacing: 2px;
-  font-kerning: none;
-  padding-top: 1rem;
 }
 
 .card-layout {
@@ -329,8 +304,8 @@ span {
   color: white;
   
   background: #1e1e1e;  /* fallback for old browsers */
-  background: linear-gradient(rgba(9, 0, 9, 0.8), rgba(11, 4, 4, 0.8)), url("img/pres-1.webp");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("img/pres-1.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(rgba(9, 0, 9, 0.8), rgba(11, 4, 4, 0.75)), url("img/pres-1.webp");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)), url("img/pres-1.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 10px 28px -1px rgba(19, 1, 40, 0.4);
@@ -357,26 +332,9 @@ span {
     padding-block-end: 1em;
   }
 
-.title p {
-  color: #dedb86;
-  overflow: hidden;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-}
-
-.image {
-  width: 60vw;
-}
-
-.section-vh {
-  min-height: 50vh;
-  display: grid;
-  place-content: center;
-}
-
-.title-section {
+.grid {
   display: grid;  
 }
-
  
 /* TILE GRID for investment buttons */
 .gallery {
@@ -385,7 +343,6 @@ span {
   grid-gap: 1em; 
   overflow: hidden;
   grid-template-columns: repeat(auto-fill, 200px);
-
 }
 
 .item {
@@ -403,7 +360,6 @@ span {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-
 /* END TILE GRID */
 
 .fund-text {
@@ -421,25 +377,29 @@ span {
   padding: 2em 1em 0;
 }
 
-
 @media screen and (max-width: 790px) {
     .direct-section {
       flex-direction: row;
     }
 
     .investment-wrapper {
+      padding-inline: 1em;
       flex-direction: column;
       margin: 0 auto;
     }
 
-      .gallery {
-        grid-template-columns: 1fr;
-        gap: 1em;
-      }
+    .gallery {
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
 
     .fund-text {
       top: 3rem;
       margin: 0 auto;
+    }
+
+    .logo-s {
+      right: -30px;
     }
   }  
 
@@ -495,37 +455,17 @@ a.link:is(:hover, :focus, :focus-visible) {
 
 .logo-s {
   width: 100%;
-  max-width: 145px;
+  max-width: 175px;
   margin: 0 auto;
   position: relative;
   right: 480px;
   top: -178px;
 }
 
-@media screen and (max-width: 1025px) {
-    .cluster {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 640px) {
-    .hero-section {
-        grid-template-columns: 1fr;
-        padding: 2em 0;
-        height: 66vh
-    }
-    
-    .hero-title {
-        text-align: center;
-    }
-    
-    .title {
-        font-size: 44px;
-        line-height: 61px;
-    }
-
     article {
       max-height: fit-content;
+      padding: 1.2em;
     }
 
     .logo-s {
@@ -533,31 +473,12 @@ a.link:is(:hover, :focus, :focus-visible) {
     }
 }
 
-@media screen and (max-width: 540px) {
-    .title {
-        padding-block-start: 3em;
-        font-size: 34px;
-        line-height: 40px;
-        padding-left: 0px;
-    }
-
-    .clusterPieces {
-        position: relative;
-    }
-
-    .cluster {
-        max-width: 320px;
-        height: 400px;
-    } 
-}
-
 /* FOOTER */
 footer {
-    margin-block-start: 15vh;
+    margin-block-start: 20vh;
     z-index: 500;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid;;
     position: relative;
     justify-content: space-evenly;
     align-items: end;
@@ -576,7 +497,7 @@ footer {
   .footer-wrapper {
     padding-block-start: 6em;
     display: flex;
-    gap: 1em;
+    gap: 7em;
     justify-content: space-evenly;
   }
   
@@ -584,7 +505,6 @@ footer {
     color: #BC78EC;
     font-weight: 700;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 1em;
     padding-block: 1.425em;
@@ -605,8 +525,8 @@ footer {
   }
 
   address {
-    text-align: center;
-    color: #cbcbcb;
+    /* text-align: center; */
+    color: #999999;
     font-size: 0.9rem;
     font-style: normal;
   }
@@ -624,6 +544,7 @@ footer {
 
   @media screen and (max-width: 700px) {
     footer {
+      margin-block-start: 2em;
       justify-items: center;
       background-size: cover;
     }

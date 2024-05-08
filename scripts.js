@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
-    // gsap.set(".hero-image", { rotation: 90 });
     gsap.set(".hero-section", { yPercent: 10 });
-
 
     gsap.to(".hero-image", {
         ease: "none",
@@ -46,9 +44,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.to(".logo-s", {
         ease: "none",
         // duration: 2,
-        yPercent: -5,
+        yPercent: -10,
         scrollTrigger: {
-            trigger: ".projects",
+            trigger: ".footer",
             duration: 2,
             start: "top",
             end: "+=150",
