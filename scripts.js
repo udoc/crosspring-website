@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         // duration: 2,
         yPercent: -15,
         scrollTrigger: {
-            trigger: ".footer",
+            trigger: ".projects",
             duration: 2,
             start: "top",
             end: "+=150",
