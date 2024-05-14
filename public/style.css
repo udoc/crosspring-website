@@ -354,7 +354,12 @@ span {
   display: flex;
   justify-content: space-evenly;
   text-align: left;
-  gap: 1.125em;
+  gap: 2em;
+}
+
+.mb {
+  padding-block-end: 1em;
+
 }
 
 h2 {
@@ -482,11 +487,12 @@ a.link:is(:hover, :focus, :focus-visible) {
 
 .logo-s {
   width: 100%;
-  max-width: 155px;
+  /* max-width: 155px; */
+  height: 300px;
   margin: 0 auto;
   position: relative;
   right: 265px;
-  top: -185px;
+  top: -145px;
 }
 
 @media screen and (max-width: 800px) {
@@ -578,7 +584,7 @@ a.link:is(:hover, :focus, :focus-visible) {
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
-  font-size: 1.225rem;
+  font-size: 1.125rem;
   justify-content: center;
   line-height: 1em;
   max-width: 100%;
