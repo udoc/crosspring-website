@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
     });
 
-    gsap.to(".fund-text", {
+    gsap.to(".animate", {
         ease: "none",
         // duration: 2,
         yPercent: -5,
