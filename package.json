@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/udoc/crosspring-website#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.20.0"
   }
 }
